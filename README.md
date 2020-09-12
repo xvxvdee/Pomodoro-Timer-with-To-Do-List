@@ -20,7 +20,7 @@ Pomodro clock
   - When you complete a session, the "Number of Sessions Left" wil be updated
   
  To-do List
- ![Repository for To-do List](https://github.com/xvxvdee/Todo-List)
+ - ![Repository for To-do List](https://github.com/xvxvdee/Todo-List)
  
 ## Visuals
 ![Pomodoro and list visuals](https://github.com/xvxvdee/Pomodoro-Timer-with-To-Do-List/blob/master/pomodoroi.jpg)
