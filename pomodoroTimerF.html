@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=MuseoModerno&family=Oswald:wght@500&family=Raleway:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quantico:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Calistoga&family=Courgette&family=Montserrat:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <title>Pomodoro</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>POMODORO</h1>
+    </header>
+    <!-- Navigation Bar -->
+    <div class="navigationBar">
+      <ul>
+        <li><a id="barAbout" href="#aboutContainer">About</a></li>
+        <li><a id="barCreator"href="#creatorContainer">Creator</a></li>
+        <li><a id="barStart"href="#startContainer">Start</a></li>
+      </ul>
+    </div>
+
+    <!-- About Pomodoro -->
+
+    <!-- A message from the creator -->
+    <article id="creatorContainer">
+      <div id="creatorItemText">
+        <h2 id="creatorItemTitle">About Me</h2>
+        <p>
+         As an undergraduate student, staying focused is hard. Once I found out about the Pomodoro technique, I had to try it! 
+         While using it, I became more productive. I thought I would share a little bit of my success with you. 
+         Add all of your tasks, to the To-Do List and <b>start a productive and efficient study session!</b>
+        </p>
+      </div>
+      <div></div>
+    </article>
+
+    <article id="aboutContainer">
+      <div>
+        <!-- <img id ="aboutPicture" src="pexels-fotografierende-3368816.jpg"> -->
+      </div>
+      <div class ="aboutGrid">
+        <h2 id="aboutContentTitle"></h2>
+        <p id="aboutContentText"></p>
+        <span id="gridButtons"><button id="leftSwipe" type="button" name="slideOne"><img src="images/cheveron-left.svg"></button><button id="rightSwipe" type="button" name="slideTwo"><img src="images/cheveron-right.svg"></button></span>
+      </div>
+    </article>
+    <!-- Starting Pomodoro -->
+    <article id="startContainer">
+      <section>
+        <div id="pomodoroClock">
+        <section class="InformationUpdateContainer">
+          <p>
+            Number of Sessions Left: <span id="numOfSessionsUpdate">-</span
+            ><br />
+            Short Break Length:
+            <span id="shortBreakLengthUpdate">-</span> mins<br />
+            Long Break Length: <span id="longBreakLengthUpdate">-</span> mins
+          </p>
+        </section>
+
+        <section class="Timer">
+          <div id="clockBar"><p>-</p></div>
+          <div id="clock"><p>-- : --</p></div>
+
+          <div class="buttons">
+            <button type="button" id="play" ><img src="images/play.svg" /></button>
+            <button type="button" id="pause"><img src="images/pause.svg" /></button>
+            <button type="button" id="reset"><img src="images/reload.svg" /></button>
+          </div>
+        </section>
+
+        <section class="UserInputContainer">
+          <p>Enter number of Sessions:</p>
+          <input
+            name="numberOfSessions"
+            id="sessions"
+            placeholder="Choose a number from 1 to 10"
+          />
+          <p>Enter short break time length:</p>
+          <input
+            name="ShortBreak"
+            id="shortBreak"
+            placeholder="Choose a number from 2 to 5"
+          />
+          <p>Enter long break time length:</p>
+          <input
+            name="LongBreak"
+            id="longBreak"
+            placeholder="Choose a number from 15 to 30"
+          />
+
+          <div class="buttons">
+            <button type="button" id="updateInfo">
+              <img src="images/tuning.svg" />
+            </button>
+            <button type="button" id="start" disabled><img src="images/stand-by.svg" /></button>
+          </div>
+        </section>
+      </div>
+      </section>
+      <section class="ListContainer">
+        <div id="listOverflow">
+        <div class="todoBox">
+          <h2>
+            To-Do List
+            <hr />
+          </h2>
+          <div class="listBox">
+            <input name="newItem" id="task" placeholder=" Enter a task" /><span>
+              <button type="button" id="add">
+                <img src="images/add-outline.svg" /></button
+            ></span>
+          </div>
+         
+          <ul id="todoList"></ul>
+        </div>
+        <div class="doneBox">
+          <h2>
+            Completed
+            <hr />
+          </h2>
+          <ul id="finishedList"></ul>
+        </div>
+      </div>
+      </section>
+    </article>
+    <script src="scriptMain.js"></script>
+    <script src="toDoScript.js"></script>
+    <script src="scriptPomodoro.js"></script>
+  </body>
+</html>
