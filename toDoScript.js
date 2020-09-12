@@ -16,13 +16,13 @@ document.getElementById("add").addEventListener("click", function () {
     finish.setAttribute("id", "done");
     finish.setAttribute("type", "button");
     finish.setAttribute("onclick", "completedTask()");
-    finish.innerHTML = `<img class ="responsive" src="checkmark.svg">`;
+    finish.innerHTML = `<img class ="responsive" src="images/checkmark.svg">`;
 
     let remove = document.createElement("button");
     remove.setAttribute("id", "trash");
     remove.setAttribute("type", "button");
     remove.setAttribute("onclick", "removeTask()");
-    remove.innerHTML = `<img class ="responsive" src="trash.svg">`;
+    remove.innerHTML = `<img class ="responsive" src="images/trash.svg">`;
 
     // containerOne.appendChild(task);
     container.appendChild(finish);
@@ -44,13 +44,13 @@ function completedTask() {
   finish.setAttribute("id", "done");
   finish.setAttribute("type", "button");
   finish.setAttribute("onclick", "completedTask()");
-  finish.innerHTML = `<img class ="responsive" src="checkmark.svg">`;
+  finish.innerHTML = `<img class ="responsive" src="images/checkmark.svg">`;
 
   let remove = document.createElement("button");
   remove.setAttribute("id", "trash");
   remove.setAttribute("type", "button");
   remove.setAttribute("onclick", "removeTask()");
-  remove.innerHTML = `<img class ="responsive" src="trash.svg">`;
+  remove.innerHTML = `<img class ="responsive" src="images/trash.svg">`;
 
   if (originHTML.includes("<del>")) {
     // console.log("SUCCESS");
@@ -73,13 +73,13 @@ function completedTask() {
     finish.setAttribute("id", "done");
     finish.setAttribute("type", "button");
     finish.setAttribute("onclick", "completedTask()");
-    finish.innerHTML = `<img class ="responsive" src="checkmark.svg">`;
+    finish.innerHTML = `<img class ="responsive" src="images/checkmark.svg">`;
 
     let remove = document.createElement("button");
     remove.setAttribute("id", "trash");
     remove.setAttribute("type", "button");
     remove.setAttribute("onclick", "removeTask()");
-    remove.innerHTML = `<img class ="responsive" src="trash.svg">`;
+    remove.innerHTML = `<img class ="responsive" src="images/trash.svg">`;
 
   
     container.appendChild(finish);
