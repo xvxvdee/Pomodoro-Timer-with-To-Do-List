@@ -1,5 +1,5 @@
 # Pomodoro-Timer-with-To-Do-List
-A webapp that can take text in and break it down. Counts characters, words, sentences, paragraphs. Also counts how many times a word appears.
+A webapp has a clock that functions as a pomodoro timer and a to-do list
 
 ## Built with
 Javascript
@@ -20,9 +20,11 @@ Pomodro clock
   - When you complete a session, the "Number of Sessions Left" wil be updated
   
  To-do List
+ ![Repository for To-do List](https://github.com/xvxvdee/Todo-List)
  
 ## Visuals
- 
+![Pomodoro and list visuals](https://github.com/xvxvdee/Pomodoro-Timer-with-To-Do-List/blob/master/pomodoroi.jpg)
+
 
 ## Credits
 - pomodoro timers
