@@ -1,5 +1,5 @@
 # Pomodoro-Timer-with-To-Do-List
-A webapp has a clock that functions as a pomodoro timer and a to-do list
+A webapp that has a clock that functions as a pomodoro timer and a to-do list
 
 ## Built with
 Javascript
