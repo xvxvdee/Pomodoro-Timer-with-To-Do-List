@@ -31,9 +31,9 @@ let setupGo = true;
 
 let breakClockStart = false;
 let studyClockStart = true;
+let setupBreak;
 
 let goTime;
-let endClock = false;
 
 if (!startClock) {
   disableStartButton();
@@ -328,5 +328,3 @@ START.addEventListener("click", function () {
     }
   }
 });
-
-
